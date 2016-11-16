@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'newrelic'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
@@ -30,6 +31,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile 'com.newrelic.agent.android:android-agent:5.+'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.5'
     compile 'io.reactivex:rxjava:1.1.6'

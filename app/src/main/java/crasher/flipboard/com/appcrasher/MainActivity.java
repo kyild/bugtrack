@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.newrelic.agent.android.NewRelic;
+
 import rx.Observable;
 import rx.Subscriber;
 
@@ -14,6 +16,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NewRelic.withApplicationToken(
+                "AA77b82a8c4d71ba16c6c84ddc5a4e1f0380739fc3"
+        ).start(this.getApplication());
         setContentView(R.layout.activity_main);
 
         Button outOfBounds = (Button) findViewById(R.id.out_of_bounds);
