@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.crittercism.app.Crittercism;
+
 import rx.Observable;
 import rx.Subscriber;
 
@@ -13,9 +15,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String key = "d9c4104a3d5d4447903d0a030e1c4e3c00555300";
+        Crittercism.initialize(getApplicationContext(), key);
         Button outOfBounds = (Button) findViewById(R.id.out_of_bounds);
         outOfBounds.setOnClickListener(this);
 
