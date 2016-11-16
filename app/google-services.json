@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "928098077586",
+    "firebase_url": "https://appcrasher-92c61.firebaseio.com",
+    "project_id": "appcrasher-92c61",
+    "storage_bucket": "appcrasher-92c61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928098077586:android:9a9780c91e2a489c",
+        "android_client_info": {
+          "package_name": "crasher.flipboard.com.appcrasher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928098077586-qqinro5jqng3qrl4gc8b8hcd6e2epvvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYkd41Vud3FvMEJFpYc4GuL_m_JQNAgCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
