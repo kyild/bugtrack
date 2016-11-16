@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="crasher.flipboard.com.appcrasher.MainActivity">
+
+        <Button
+            android:id="@+id/out_of_bounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ArrayIndexOutOfBounds" />
+
+        <Button
+            android:id="@+id/out_of_memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OutOfMemory" />
+
+        <Button
+            android:id="@+id/null_pointer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NullPointer" />
+
+        <Button
+            android:id="@+id/run_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Time" />
+
+        <Button
+            android:id="@+id/freeze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Freeze ANR" />
+
+        <Button
+            android:id="@+id/stack_overflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stack Overflow" />
+
+        <Button
+            android:id="@+id/kotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kotlin Crash" />
+
+
+        <Button
+            android:id="@+id/rx_java_stream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RX Java Stream Crash" />
+
+
+
+</LinearLayout>
