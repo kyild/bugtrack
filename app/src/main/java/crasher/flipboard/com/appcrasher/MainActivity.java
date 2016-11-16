@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import net.hockeyapp.android.CrashManager;
+import net.hockeyapp.android.UpdateManager;
+
 import rx.Observable;
 import rx.Subscriber;
 
@@ -148,5 +151,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } while (loop1 > 0);
             iteratorValue = iteratorValue * 5;
         }
+    }
+
+    public void onResume() {
+        super.onResume();
+        // ... your own onResume implementation
+        checkForCrashes();
+    }
+
+    private void checkForCrashes() {
+        CrashManager.register(this, "792209b585de40bda56d6f8e79577bd7" );
     }
 }

@@ -16,5 +16,5 @@
             </intent-filter>
         </activity>
     </application>
-
+    <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="792209b585de40bda56d6f8e79577bd7" />
 </manifest>
