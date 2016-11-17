@@ -16,3 +16,5 @@
 #   public *;
 #}
 -dontwarn rx.internal.**
+
+-dontwarn com.crittercism.**
